@@ -17,3 +17,5 @@ and this list:
 - thing1
 - thing2
 - thing3
+
+This (and all of the previous commits) were made from git cli using an *ssh key*

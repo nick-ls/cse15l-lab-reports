@@ -13,3 +13,7 @@ and some
 # Code!
 rm -rf / --no-preserve-root
 ```
+and this list:
+- thing1
+- thing2
+- thing3

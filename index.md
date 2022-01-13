@@ -6,7 +6,7 @@ look at this ***fancy text***
 and this
 ### BIG TEXT
 
-and a [link](https://example.com)
+and a [link](/cse15l-lab-reports/lab-report-1-week-2) to another lab report page
 
 and some 
 ```

@@ -1,1 +1,5 @@
 theme: jekyll-theme-tactile
+include:
+  - index.md
+  - lab-report-week-2.md
+  - remote-access.md

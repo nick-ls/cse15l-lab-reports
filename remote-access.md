@@ -69,6 +69,7 @@ Assuming that you are not already an expert on linux commands, here are the bare
 And most importantly remember to be `nice` to other users working on the same server as you. If you have a long-running, cpu-intensive task, be sure to start it with a higher nice value so it doesn't impact other users as much on the same system.
 ```
 # 19 is the lowest priority, -20 is the highest, 0 is the default
+
 nice -n 19 bash long_running_cpu_intensive_task.sh
 ```
 You can play around with commands for a while until you get bored
@@ -84,6 +85,7 @@ scp [...source files] [remote server]
 The only caveat is that in order to get it to work, you have to specify the directory on the server to place the files.
 ```
 scp file.txt cs15lwi22adq@ieng6.ucsd.edu:~/
+
 # See how the name of the server is separated from the destination directory by a colon? That is necessary for scp to recognize the destination as a remote server.
 ```
 
@@ -92,6 +94,7 @@ scp file.txt cs15lwi22adq@ieng6.ucsd.edu:~/
 The image shows copying two files from my local computer to the remote server. If you look closely, you can also see a new way to use the `ssh` command. If you put an argument after specifying the server, `ssh` will log in and run that one command before logging out. This is convenient if you just need to check one thing, such as if your files were successfully transferred. You can specify multiple commands, but only if they are quoted and separated by semicolons.
 ```
 # Prints contents of home directory, ascends a directory, and prints the parent directory contents
+
 scp file.txt cse15lwi22adq@ieng6.ucsd.edu:~/ "ls; cd ..; ls"
 ```
 ## Setting up an SSH key

@@ -1,4 +1,4 @@
-<style>pre{white-space:pre-wrap;}</style>
+<style>pre{white-space:pre-wrap;} h1 code{font-size: 0.9em;</style>
 
 # Remote Access to UCSD `ieng6` Machines
 This document outlines the steps you need to take in order to get access to any course specific account on the `ieng6` computers at UCSD. 

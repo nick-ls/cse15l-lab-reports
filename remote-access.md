@@ -1,6 +1,7 @@
+<style>pre{white-space:pre-wrap;}</style>
+
 # Remote Access to UCSD `ieng6` Machines
 This document outlines the steps you need to take in order to get access to any course specific account on the `ieng6` computers at UCSD. 
-___
 ## Setting up your computer
 ### Installing an SSH client
 In order to connect, you're going to need an ssh client. Users on Windows machines can choose from a variety of SSH clients, but in this case we're going to be using [OpenSSH](https://www.openssh.com/). Users on Linux machines don't have to worry about this step since nearly all versions of Linux come prepackaged with an `ssh` command. In the case that your distro doesn't have it preinstalled, use your package manager to install it. Or, if you're using a really custom distro, build it from source.
@@ -10,7 +11,6 @@ Simply head to the [VS Code Download Page](https://code.visualstudio.com/downloa
 This is how it looks when you have correctly installed and ran the program:
 
 ![VS Code Base Installation](img/vscode.png)
-___
 ## Activating your account
 If you're just starting the course, you're going to need to [set a password](https://sdacs.ucsd.edu/~icc/index.php) that you'll use to log in to your course account. Find your account by filling out the account lookup form.
 
@@ -25,7 +25,6 @@ Then click on the change password link
 ![Change Password Link](img/changepw.png)
 
 Then follow through with the rest of the login prompts until you have to input a new password. This will be the new password you will use to log into `ieng6` computers (and everything else UCSD related).
-___
 ## Connecting to the server
 With an ssh client installed on your computer, you can start up a terminal or command prompt and type the following to connect to your new account.
 ```
@@ -45,7 +44,6 @@ Once you press the `Enter` key, you will be prompted to enter your new password.
 Type your password in (the characters won't show up in the terminal while you're typing) and after pressing `Enter` again (assuming you typed the password correctly) you should see the above output in your terminal.
 
 Congratulations, you have successfully logged in!
-___
 ## Running commands on the server 
 Assuming that you are not already an expert on linux commands, here are the bare essentials you need to know to get around the server:
 - `ls` - Lists the files in the current directory
@@ -78,7 +76,6 @@ You can play around with commands for a while until you get bored
 ![Miscellaneous Commands](img/commands.png)
 
 Now that you're a linux master, it's time to move on to actually doing something stubstantial.
-___
 ## Copying files from your computer to the server
 With OpenSSH installed, you also have access to a command named `scp` which stands for "secure copy" (no, not a foundation that contains eldritch horrors). It's usage is as simple as:
 ```
@@ -97,7 +94,6 @@ The image shows copying two files from my local computer to the remote server. I
 # Prints contents of home directory, ascends a directory, and prints the parent directory contents
 scp file.txt cse15lwi22adq@ieng6.ucsd.edu:~/ "ls; cd ..; ls"
 ```
-___
 ## Setting up an SSH key
 If you've been following along, it's probably been relatively tedious to keep inputting your password over and over again running commands like `scp` and `ssh`. Luckily there is a fix for this: SSH keys. With OpenSSH installed, you can use `ssh-keygen` to create a new public and private key to your server:
 ```
@@ -120,7 +116,6 @@ Now that you've put your public key into the `authorized_keys` file, you'll now 
 ![SSH key working](img/sshedin.png)
 
 Using your private key for the identity file argument (`-i`), you are now able to log-in without inputting your password.
-___
 ## Further optimizations
 To make remote building in VSCode quicker, you can use keybinds along with scripts to optimize everything to the point at which it seems that it's running locally.
 
@@ -131,6 +126,7 @@ This script copies my local java file to the server, compiles it there, and then
 ![Remote build in action](img/remotebuild.png)
 
 It runs when you press `Ctrl`+`Shift`+`B`, and its fast execution time saves minutes to hours depending on how often you normally run code.
-___
+
+---
 
 Thanks for listening to my TED Talk!

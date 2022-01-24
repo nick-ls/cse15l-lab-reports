@@ -128,7 +128,7 @@ This script copies my local java file to the server, compiles it there, and then
 
 ![Remote build in action](img/remotebuild.png)
 
-It runs when you press `Ctrl`+`Shift`+`B`, and its fast execution time saves minutes to hours depending on how often you normally run code.
+It runs when you press `Ctrl`+`Shift`+`B` (which comprises a measly 3 keystrokes), and its fast execution time saves minutes to hours depending on how often you normally run code.
 
 ---
 

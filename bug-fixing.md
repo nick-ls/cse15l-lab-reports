@@ -1,13 +1,13 @@
-<style>pre{white-space:pre-wrap;} h1 code{font-size: 0.9em; padding: 5px;} code{padding: 3px;}</style>
+<style>pre{white-space:pre-wrap;} h1 code{font-size: 0.9em; padding: 5px;} code{padding: 3px;} body {color:rgb(77,77,77);}</style>
 
 # Fixing Markdown Parser Bugs
 Over the course of the last 2 weeks and the upcoming weeks, we're going to be building and improving a program that can parse the links in a markdown file and extract their contents. I don't know about you, but to me, that sounds like the perfect job for some regular expressions (RegEx if you will). [Unlike HTML](https://stackoverflow.com/a/1732454), markdown files seem to lack sufficient complexity enough to warrant parsing by regular expressions without summoning an eldritch horror.
 ## First bug fix
 ![First code diff](/img/lab4/diff1.png)
 
-Failing Inducing Input: [`empty-link.md`](https://github.com/Nicholas264/markdown-parse/blob/main/empty-link.md) [`(raw)`](https://raw.githubusercontent.com/Nicholas264/markdown-parse/main/empty-link.md)
+**Failure Inducing Input:** [`empty-link.md`](https://github.com/Nicholas264/markdown-parse/blob/main/empty-link.md) [`(raw)`](https://raw.githubusercontent.com/Nicholas264/markdown-parse/main/empty-link.md)
 
-Symptoms: 
+**Symptoms:** 
 
 ![First symptom](/img/lab4/symptom1.png)
 
@@ -16,9 +16,9 @@ The regular expression was testing for any length of non-closing-parenthesis cha
 ## Second bug fix
 ![Second code diff](/img/lab4/diff2.png)
 
-Failure Inducing Input: [`image-file.md`](https://github.com/Nicholas264/markdown-parse/blob/main/image-file.md) [`(raw)`](https://raw.githubusercontent.com/Nicholas264/markdown-parse/main/image-file.md)
+**Failure Inducing Input:** [`image-file.md`](https://github.com/Nicholas264/markdown-parse/blob/main/image-file.md) [`(raw)`](https://raw.githubusercontent.com/Nicholas264/markdown-parse/main/image-file.md)
 
-Symptoms:
+**Symptoms:**
 
 ![Second symptom](/img/lab4/symptom2.png)
 
@@ -27,9 +27,9 @@ The bug was that the regular expression wasn't checking if there was an exclamat
 ## Third bug fix
 ![Third code diff](/img/lab4/diff3.png)
 
-Failure Inducing Input: [`hell.md`](https://github.com/Nicholas264/markdown-parse/blob/main/hell.md) [`(raw)`](https://raw.githubusercontent.com/Nicholas264/markdown-parse/main/hell.md)
+**Failure Inducing Input:** [`hell.md`](https://github.com/Nicholas264/markdown-parse/blob/main/hell.md) [`(raw)`](https://raw.githubusercontent.com/Nicholas264/markdown-parse/main/hell.md)
 
-Symptoms: 
+**Symptoms:** 
 
 ![Third symptom](/img/lab4/symptom3.png)
 

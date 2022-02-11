@@ -1,4 +1,4 @@
-<style>pre{white-space:pre-wrap;} h1 code{font-size: 0.9em; padding: 5px;} code{padding: 3px;}</style>
+<style>pre{white-space:pre-wrap;} h1 code{font-size: 0.9em; padding: 5px;} code{padding: 3px;color:rgb(250,70,20);}</style>
 
 # Streamlining ssh configuration
 While some people use a telnet client like putty to manage their connections, it is actually possible to do effectively the same thing with your default OpenSSH configuration using its config files.

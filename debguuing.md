@@ -1,7 +1,7 @@
 <style>pre{white-space:pre-wrap;} h1 code{font-size: 0.9em; padding: 5px;} code{padding: 3px;color:rgb(250,70,20);}</style>
 
 # Debugging A Markdown Link Parser
-### An ongoing example of why you should never try to build your own parser for a well-documented markup language when libraries already exist to parse it for you.
+### A cautionary tale of why you should never try to build your own parser for a well-documented markup language when libraries already exist to parse it for you.
 
 Today [my repository](https://github.com/Nicholas264/markdown-parse) will be facing off against [this person's respository](https://github.com/TheZenMasterz/markdown-parse) in an epic battle of who can build the best failing markdown link parser.
 

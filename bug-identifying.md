@@ -45,6 +45,10 @@ The underlined section shows the bug in the regex, where it only checks for a pa
 
 ## Second test
 ![Second difference in tests](img/lab10/diff2.png)
+Test file `511.md` contents:
+```
+[link [foo [bar]]](/uri)
+```
 In this case, the professor's program is correct again while mine fails. This is because there are nested brackets included in the program which my code doesn't check for.
 
 Bug Location:

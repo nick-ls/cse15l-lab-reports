@@ -4,3 +4,4 @@
 - [Remote Access Tutorial](/cse15l-lab-reports/remote-access)
 - [Streamlining SSH Access](/cse15l-lab-reports/streamline-ssh)
 - [Debguuing](/cse15l-lab-reports/debguuing)
+- [Bug Identifying](/cse15l-lab-reports/bug-identifying)
